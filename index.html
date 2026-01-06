@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diyorbek Rasulov | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for Diyorbek Rasulov — Computer Science student focused on systems, algorithms, and AI."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="top"></div>
+
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header / Nav -->
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <!-- Left: UB wordmark + your name -->
+        <a class="brand" href="#top" aria-label="Go to top">
+          <img
+            class="ub-wordmark"
+            src="images/ub-wordmark.jpg"
+            alt="University at Buffalo"
+          />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span class="brand-text">Diyorbek</span>
+        </a>
+
+        <!-- Center: Nav -->
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#goals">Goals</a>
+          <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+
+        <!-- Right: Crest (NOT a link) -->
+        <div class="crest-wrap" aria-label="University at Buffalo crest">
+          <img class="ub-crest" src="images/ub-crest.jpg" alt="University at Buffalo crest" />
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow">Computer Science Student • Systems • Algorithms • AI (Learning)</p>
+            <h1>Hi, I’m <span class="accent">Diyorbek Rasulov</span>.</h1>
+            <p class="lead">
+              I build projects that strengthen my fundamentals from low-level programming and
+              concurrency to algorithmic problem solving. I care about clean design, correctness,
+              and continuous improvement.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn ghost" href="#contact">Get in Touch</a>
+              <a class="btn link" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+                Download Resume (PDF)
+              </a>
+            </div>
+
+            <div class="quick-stats" role="list">
+              <div class="stat" role="listitem">
+                <span class="stat-num">C</span>
+                <span class="stat-label">Systems focus</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-num">DSA</span>
+                <span class="stat-label">Algorithm thinking</span>
+              </div>
+              <div class="stat" role="listitem">
+                <span class="stat-num">AI</span>
+                <span class="stat-label">Learning path</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Headshot card">
+            <div class="headshot-wrap">
+              <img
+                src="images/headshot.jpg"
+                alt="Headshot of Diyorbek Rasulov"
+                class="headshot"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="headshot-fallback" style="display:none;">
+                <div class="fallback-circle"></div>
+                <p>
+                  Add your headshot at <code>images/headshot.jpg</code>
+                </p>
+              </div>
+            </div>
+
+            <div class="hero-mini">
+              <p class="mini-title">Currently building</p>
+              <p class="mini-text">
+                A portfolio of strong fundamentals + real projects that show how I think.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head">
+            <h2>About Me</h2>
+            <p>A little context about who I am, what I enjoy, and how I approach learning.</p>
+          </div>
+
+          <div class="grid-two">
+            <div class="card">
+              <h3>My focus</h3>
+              <p>
+                I’m a Computer Science student who enjoys breaking down complex problems and
+                understanding how things work beneath the surface. I’m especially interested in
+                systems programming, algorithms, and learning how efficient, reliable software is
+                built from the ground up.
+              </p>
+              <p>
+                I like the process of struggling through a problem, refining my approach, and
+                learning from mistakes, then documenting what I learned so I can revisit it later.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Core strengths</h3>
+              <ul class="list">
+                <li>Strong debugging mindset (I chase root causes, not band-aids)</li>
+                <li>Careful reasoning about memory, concurrency, and correctness</li>
+                <li>Clear communication and structured thinking</li>
+                <li>Consistency: I show up and improve over time</li>
+              </ul>
+              <div class="pill-row" aria-label="Key interests">
+                <span class="pill">C / Systems</span>
+                <span class="pill">Data Structures</span>
+                <span class="pill">Algorithms</span>
+                <span class="pill">AI/ML (Learning)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section alt" id="experience">
+        <div class="container">
+          <div class="section-head">
+            <h2>Experience</h2>
+            <p>Coursework + hands-on projects that built my foundations and problem-solving skills.</p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-content card">
+                <div class="row">
+                  <h3>Computer Science Coursework</h3>
+                  <span class="tag">University at Buffalo</span>
+                </div>
+                <p>
+                  Built a strong foundation in systems programming, algorithms &amp; data structures,
+                  debugging, and low-level reasoning about code at runtime.
+                </p>
+                <ul class="list">
+                  <li>Systems Programming in C (memory, pointers, data structures)</li>
+                  <li>Algorithms &amp; problem solving</li>
+                  <li>Concurrency concepts (mutexes, condition variables)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="timeline-content card">
+                <div class="row">
+                  <h3>Project-Based Learning</h3>
+                  <span class="tag">Personal + Course Projects</span>
+                </div>
+                <p>
+                  Implemented core data structures from scratch, wrote thread-safe code, and learned
+                  to handle edge cases through iterative testing and refinement.
+                </p>
+                <ul class="list">
+                  <li>Custom data structures with manual memory handling</li>
+                  <li>Thread-safe producer/consumer components</li>
+                  <li>Performance and correctness trade-offs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="note card">
+            <p>
+              <strong>Tip:</strong> Add internships or roles, using the same
+              format: title, context, skills, and what I learned.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+            <p>Mini case studies: problem, approach, and what I learned.</p>
+          </div>
+
+          <!-- Horizontal scroller -->
+          <div class="projects-scroller" aria-label="Projects scroller">
+            <!-- 1 -->
+            <article class="project card">
+              <div class="project-top">
+                <h3>Thread-Safe Producer–Consumer Queue</h3>
+                <span class="tag">C • POSIX Threads</span>
+              </div>
+              <p class="muted">
+                Designed a queue that safely supports multiple producer and consumer threads without
+                data races or deadlocks.
+              </p>
+
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>
+                  Used mutexes and condition variables to synchronize access to shared data while
+                  avoiding busy waiting and ensuring correctness under concurrency.
+                </p>
+              </div>
+
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Why condition variables must be used in loops</li>
+                  <li>How small synchronization mistakes create subtle bugs</li>
+                  <li>How to reason about thread interleavings</li>
+                </ul>
+              </div>
+
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="project card">
+              <div class="project-top">
+                <h3>Custom Data Structures in C</h3>
+                <span class="tag">C • Memory</span>
+              </div>
+              <p class="muted">
+                Implemented foundational data structures from scratch with careful pointer handling
+                and edge-case coverage.
+              </p>
+
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>
+                  Wrote data structures with manual memory management and tested behavior under
+                  varied inputs to validate correctness.
+                </p>
+              </div>
+
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>How memory layout affects runtime behavior</li>
+                  <li>How to debug segmentation faults systematically</li>
+                  <li>Why clear invariants make code safer</li>
+                </ul>
+              </div>
+
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="project card">
+              <div class="project-top">
+                <h3>StudyForge (In Progress)</h3>
+                <span class="tag">Learning Platform</span>
+              </div>
+              <p class="muted">
+                A project idea focused on building structured practice tools (problems, explanations,
+                and progress) to help students learn consistently.
+              </p>
+
+              <div class="project-block">
+                <h4>What I’m building</h4>
+                <p>
+                  A system for generating practice sets, tracking progress, and providing clear,
+                  step-by-step explanations.
+                </p>
+              </div>
+
+              <div class="project-block">
+                <h4>Next steps</h4>
+                <ul class="list">
+                  <li>Add problem templates and randomized inputs</li>
+                  <li>Build a clean UI and a content pipeline</li>
+                  <li>Deploy a simple MVP</li>
+                </ul>
+              </div>
+
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Demo (optional)</a>
+              </div>
+            </article>
+
+            <!-- Templates 4 to 10 -->
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+
+            <article class="project card project-template">
+              <div class="project-top">
+                <h3>Project Title</h3>
+                <span class="tag">Tech</span>
+              </div>
+              <p class="muted">Short description of what the project is and why it matters.</p>
+              <div class="project-block">
+                <h4>What I did</h4>
+                <p>Explain what you built and how you approached it.</p>
+              </div>
+              <div class="project-block">
+                <h4>What I learned</h4>
+                <ul class="list">
+                  <li>Lesson one</li>
+                  <li>Lesson two</li>
+                  <li>Lesson three</li>
+                </ul>
+              </div>
+              <div class="project-links">
+                <a class="link-btn" href="#" aria-disabled="true">GitHub (add link)</a>
+                <a class="link-btn" href="#" aria-disabled="true">Write-up (optional)</a>
+              </div>
+            </article>
+          </div>
+
+          <p class="projects-hint muted">
+            Tip: On desktop, hold Shift and scroll to move left and right. On mobile, swipe.
+          </p>
+        </div>
+      </section>
+
+      <!-- Fun Facts -->
+      <section class="section alt" id="fun-facts">
+        <div class="container">
+          <div class="section-head">
+            <h2>Fun Facts</h2>
+            <p></p>
+          </div>
+
+          <div class="card">
+            <ul class="list fun-list">
+              <li>I enjoy understanding <strong>why</strong> something works, not just that it works.</li>
+              <li>I like breaking things first so I can learn how to fix them.</li>
+              <li>I’m interested in both low-level systems and high-level AI concepts.</li>
+              <li>I value consistency and improvement over shortcuts.</li>
+              <li>I like turning difficult concepts into simpler explanations.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+        <section class="section" id="skills">
+        <div class="container">
+            <div class="section-head">
+            <h2>Skills</h2>
+            <p>
+                Languages, tools, and technical areas I’m comfortable with and actively improving.
+            </p>
+            </div>
+
+            <div class="grid-two">
+            <div class="card">
+                <h3>Languages</h3>
+                <div class="pill-row">
+                <span class="pill">C</span>
+                <span class="pill">C++</span>
+                <span class="pill">Java</span>
+                <span class="pill">Python</span>
+                <span class="pill">OCaml</span>
+                <span class="pill">MIPS Assembly</span>
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">JavaScript</span>
+                </div>
+                <p class="small muted">
+                Edit this list anytime to match what you want recruiters to see first.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Tools and IDEs</h3>
+                <div class="pill-row">
+                <span class="pill">VS Code</span>
+                <span class="pill">Git</span>
+                <span class="pill">GitHub</span>
+                <span class="pill">Linux</span>
+                <span class="pill">WSL</span>
+                <span class="pill">GDB</span>
+                <span class="pill">Valgrind</span>
+                </div>
+                <p class="small muted">
+                Add others like IntelliJ, CLion, Vim, or anything you truly use.
+                </p>
+            </div>
+            </div>
+
+            <div class="card" style="margin-top: 1.2rem;">
+            <h3>Technical areas</h3>
+            <div class="pill-row">
+                <span class="pill">Data Structures</span>
+                <span class="pill">Algorithms</span>
+                <span class="pill">Concurrency</span>
+                <span class="pill">Memory and Pointers</span>
+                <span class="pill">Debugging</span>
+                <span class="pill">Performance Thinking</span>
+            </div>
+            </div>
+        </div>
+        </section>
+      <!-- Goals -->
+      <section class="section" id="goals">
+        <div class="container">
+          <div class="section-head">
+            <h2>Goals</h2>
+            <p>Where I’m going next short-term skill building and long-term impact.</p>
+          </div>
+
+          <div class="card" style="margin-bottom: 1.2rem;">
+            <p>
+              I value long-term growth and becoming deeply effective within one team. I’m looking for a place where I can contribute consistently, learn from strong engineers, and grow into higher responsibility over time.
+            </p>
+          </div>
+
+          <div class="grid-two">
+            <div class="card">
+              <h3>Short Term</h3>
+              <ul class="list">
+                <li>Strengthen my foundation in systems programming and algorithms</li>
+                <li>Build meaningful projects that show problem-solving and engineering maturity</li>
+                <li>Learn AI/ML fundamentals and practice consistently</li>
+                <li>Improve documentation and technical communication</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Long Term</h3>
+              <ul class="list">
+                <li>Become a well rounded software engineer with strong fundamentals</li>
+                <li>Work on impactful systems or intelligent software</li>
+                <li>Keep learning and help others grow along the way</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section alt" id="contact">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p>
+              Want to connect, collaborate, or talk about projects? Send me a message!
+            </p>
+          </div>
+
+          <div class="grid-two">
+            <div class="card">
+              <h3>Get in touch</h3>
+              <p class="muted">Email + LinkedIn + GitHub</p>
+
+              <div class="contact-links">
+                <a class="contact-link" href="mailto:diyorbekxrasulov@gmail.com">
+                  <span class="icon">✉</span> diyorbekxrasulov@gmail.com
+                </a>
+                <a class="contact-link" href="https://www.linkedin.com/in/diyorbekxrasulov/" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">in</span> LinkedIn
+                </a>
+                <a class="contact-link" href="https://github.com/DiyorbekRasulov" target="_blank" rel="noopener noreferrer">
+                  <span class="icon">GH</span> GitHub
+                </a>
+              </div>
+
+              <div class="divider"></div>
+
+              <p class="small">
+                <strong>Resume:</strong>
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>Message me</h3>
+
+              <form class="form" action="https://formspree.io/f/mkogaeje" method="POST">
+                <label>
+                  Name
+                  <input type="text" name="name" placeholder="Your name" autocomplete="name" required />
+                </label>
+
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                </label>
+
+                <label>
+                  Message
+                  <textarea name="message" rows="5" placeholder="What’s on your mind?" required></textarea>
+                </label>
+
+                <input type="text" name="_gotcha" style="display:none" />
+
+                <button class="btn primary" type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="footer-left">
+            <img class="footer-ub" src="images/ub-interlocking.jpg" alt="UB interlocking logo" />
+            <p>© <span id="year"></span> Diyorbek Rasulov</p>
+          </div>
+
+          <a class="to-top" href="#top">Back to top ↑</a>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
